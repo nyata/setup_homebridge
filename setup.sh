@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo su -
 
 # apt-get
 apt-get update
@@ -26,3 +25,7 @@ npm install -g --unsafe-perm homebridge-config-server
 npm install -g homebridge-multi
 cd $NODE_PATH/homebridge-config-server/
 npm install
+
+# Create config.json
+cd .homebridge
+curl https://raw.githubusercontent.com/nfarina/homebridge/master/config-sample.json > config.json
