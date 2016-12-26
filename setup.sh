@@ -33,5 +33,5 @@ cd $NODE_PATH/homebridge-config-server/
 sudo npm install
 
 # Create config.json
-cd .homebridge
+cd $HOME/.homebridge
 curl https://raw.githubusercontent.com/nfarina/homebridge/master/config-sample.json > config.json
