@@ -34,4 +34,4 @@ sudo npm install
 
 # Create config.json
 cd $HOME/.homebridge
-curl https://raw.githubusercontent.com/nfarina/homebridge/master/config-sample.json > config.json
+curl https://raw.githubusercontent.com/nyata/setup_homebridge/master/config.json.sample > config.json
