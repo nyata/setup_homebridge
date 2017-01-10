@@ -31,8 +31,6 @@ sudo npm install -g --unsafe-perm homebridge hap-nodejs node-gyp
 cd $NODE_PATH/homebridge/
 sudo npm install --unsafe-perm bignum
 cd $NODE_PATH/hap-nodejs/node_modules/mdns
+sudo ln -s /home/pi/.nodebrew/current/bin/node-gyp /usr/bin/node-gyp
+sudo ln -s /home/pi/.nodebrew/current/lib/node-gyp /usr/lib/node-gyp
 sudo node-gyp BUILDTYPE=Release rebuild
-
-# Create config.json
-cd $HOME/.homebridge
-curl https://raw.githubusercontent.com/nyata/setup_homebridge/master/config.json.sample > config.json

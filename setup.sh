@@ -31,7 +31,3 @@ sudo npm install -g --unsafe-perm homebridge-config-server
 sudo npm install -g homebridge-multi
 cd $NODE_PATH/homebridge-config-server/
 sudo npm install
-
-# Create config.json
-cd $HOME/.homebridge
-curl https://raw.githubusercontent.com/nyata/setup_homebridge/master/config.json.sample > config.json
